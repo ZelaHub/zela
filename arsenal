@@ -1,0 +1,41 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("ZelaHub", "Ocean")
+
+--HOME
+local Home = Window:NewTab("Home")
+local HomeSection = Home:NewSection("Home")
+
+HomeSection:NewLabel("Welcome User")
+
+HomeSection:NewLabel("Keep Using Our scripts For more Updates")
+
+HomeSection:NewLabel("Recommended use in Arsenal")
+
+
+--MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("OwlHub (good)", "OwlHub is not the best but its ok", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+MainSection:NewButton("BoltsHubV5 (Amazing)", "BoltsHubV5 is Amazing for arsenal", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main"))();
+end)
+
+MainSection:NewButton("DarkHub 2nd Best", "DarkHub is OP for arsenal But has bad key system", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+
+--MISC
+
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("Misc")
+
+MiscSection:NewKeybind("Chose A keybind ", "chose a keybind that toggles the ui", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+MiscSection:NewLabel("Discord watr#0001")
